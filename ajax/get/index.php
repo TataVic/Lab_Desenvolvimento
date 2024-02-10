@@ -19,12 +19,17 @@
         link.onload = function(){
             if(link.status === 200){
                 var div = document.getElementById("resultados");
+                div.innerHTML = "<h2>Dados Carregados</h2>";
+                div.innerHTML += link.responseText;
             }
-            else{alert("Erro ao carregar dados"+link.statusText);}
-        }
-    };
+            else{
+                alert("Erro ao carregar dados"+link.statusText);
+            }
+        };
     link.onerror = function(){
-        alert("Erro na consulta de dados!")
+        alert("Erro na consulta de dados!");
+    };
+    link.send();
     }
 </script>
     
