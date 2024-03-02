@@ -9,11 +9,8 @@
         }
         //controle da visualização e do banco de dados
         public function index(){ //chamado do core
-            $this->loadTemplate('home', $this->dados);
+            $this->loadTemplate('produtos', $this->dados);
         }
-        public function produto(){ //chamado do core
-            $this->dados['nome'] = 'Samsung 4G';
-            $this->loadTemplate('produto', $this->dados); //não chama
-        }
+
     }
 ?>

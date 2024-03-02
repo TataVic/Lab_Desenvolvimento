@@ -1,0 +1,1 @@
+<h2>Essa é a página de produtos: <?php echo $nome?></h2>

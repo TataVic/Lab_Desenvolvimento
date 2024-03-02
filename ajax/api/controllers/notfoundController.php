@@ -1,6 +1,6 @@
 <?php
 
-    class homeController extends controller{
+    class notfoundController extends controller{
         private $dados;
         public function __construct()
         {
@@ -9,11 +9,7 @@
         }
         //controle da visualização e do banco de dados
         public function index(){ //chamado do core
-            $this->loadTemplate('home', $this->dados);
-        }
-        public function produto(){ //chamado do core
-            $this->dados['nome'] = 'Samsung 4G';
-            $this->loadTemplate('produto', $this->dados); //não chama
+            $this->loadTemplate('404', $this->dados);
         }
     }
 ?>

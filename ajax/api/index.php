@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include 'config/config.php'; //carregar os arquivos
 
     //setando configs
     spl_autoload_register(

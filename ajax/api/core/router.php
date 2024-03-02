@@ -19,7 +19,9 @@
                     echo "Erro: Callback não é uma função válida";
                 }
             }else{
-                echo "rota não definida";
+                //echo "rota não definida";
+                header("Location: ".BASE_URL.'404');
+                exit;
             }
         }
     }
