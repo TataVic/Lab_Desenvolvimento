@@ -1,6 +1,7 @@
 <?php
     session_start();
-    include 'config/config.php'; //carregar os arquivos
+    require 'config/config.php'; //carregar os arquivos
+    require 'config/database.php';
 
     //setando configs
     spl_autoload_register(

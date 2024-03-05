@@ -1,5 +1,8 @@
 <?php
 class controller{
+
+    protected $db;
+
     public function __construct(){ //método construtor
         global $config;
     }
