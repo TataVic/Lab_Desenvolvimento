@@ -7,7 +7,7 @@ class Core{
         //adicionar rotas
         $router->addRoute('/', [new homeController(), 'index']);
         //$router->addRoute('/', array(new homeController(), 'index'));
-        $router->addRoute('/produtos', [new homeController(), 'produto']);
+        $router->addRoute('/produtos', [new produtosController(), 'index']);
        
         //$router->addRoute('/produtos', [new produtosController(), 'index']);
 

@@ -10,7 +10,7 @@
         //controle da visualização e do banco de dados
         public function index(){ //chamado do core
 
-            $produto = new Produto();
+            $produto = new Produtos();
             
             $this->dados['produtos'] = $produto->getAll();
 

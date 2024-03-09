@@ -1,5 +1,5 @@
 <?php 
-class Produto extends model{
+/* class Produto extends model{
     public function getAll(){
         $retorno = array();
 
@@ -12,4 +12,6 @@ class Produto extends model{
 
         return $retorno;
     }
-}
+} */
+
+//não estaria utilizando - apenas os Produtos()
