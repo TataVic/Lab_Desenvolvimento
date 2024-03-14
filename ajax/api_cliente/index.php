@@ -15,6 +15,8 @@
                 url: 'http://localhost/Lab_Desenvolvimento/ajax/api/produtos',
                 type:'GET',
                 dataType:'json',
+                //headers: ('authorization','123456'),
+                headers: {'AUTH':'12345'},
                 success: function(dados){
                     //console.log(dados);
                     $('#dados').html(JSON.stringify(dados));
