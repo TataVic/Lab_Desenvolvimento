@@ -17,7 +17,7 @@
             $token = '';
             //if(!isset($_SERVER['authorization']) || empty($_SERVER['authorization'])){
                 if(!isset($_SERVER['HTTP_AUTH']) || empty($_SERVER['HTTP_AUTH'])){
-                output_header(false,'Token não encontrado', array('consulte o manual aqui www.help.com.br'));
+                    output_header(false,'Token não encontrado', array('consulte o manual aqui www.help.com.br'));
                 }
                 if($_SERVER['HTTP_AUTH']  != "12345"){
                     output_header(false,'Token não é válido', array('Gere novamente!'));

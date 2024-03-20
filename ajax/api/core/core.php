@@ -8,6 +8,12 @@ class Core{
         $router->addRoute('/', [new homeController(), 'index']);
         //$router->addRoute('/', array(new homeController(), 'index'));
         $router->addRoute('/produtos', [new produtosController(), 'index']);
+        
+        //api pokemo
+        $router->addRoute('/pokemon', [new pokemonController(), 'index']);
+        $router->addRoute('/pokemon/lista', [new pokemonController(), 'lista']);
+        $router->addRoute('/pokemon/get', [new pokemonController(), 'get']);
+        $router->addRoute('/pokemon/search', [new pokemonController(), 'search']);
        
         //$router->addRoute('/produtos', [new produtosController(), 'index']);
 
